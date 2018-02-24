@@ -1,11 +1,10 @@
-<div id="wrapper">
-  <button id="startScrape">click this button to scrape data</button>
-  <div id="articles">
+<div id="wrapper" class="row">
+  <div id="articles" class="col">
      {{#each dbArticles}} 
         <p data-id={{this._id}}> {{this.title}}</p>
         <a href={{this.link}}>{{this.link}}</a>
-     
       {{/each}}
   </div>
-  <div id="notes"></div>
+  <div id="notes" class="col"></div>
 </div>
+
